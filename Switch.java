@@ -1,22 +1,31 @@
-import java.util.*;
-public class Switch {
+public class Switch{
     public static void main(String[] args) {
-        int operator
-        switch(a=b);
-                case 1;
-                    System.out.println("a+b:");
-                    break;
-                case 2:
-                    System.out.println("a-b:");
-                    break;
-                case 3:
-                    System.out.println("a*b:");
-                    break;
-                case 4:
-                    System.out.println("a/b:");
-                    break;
-                
+        char operator = '+'; 
+        int num1 = 10;
+        int num2 = 5;
+        int result = 0;
+
+        switch (operator) {
+            case '+':
+                result = num1 + num2;
+                break;
+            case '-':
+                result = num1 - num2;
+                break;
+            case '*':
+                result = num1 * num2;
+                break;
+            case '/':
+                result = num1 / num2;
+                break;
+            case '%':
+                result = num1 % num2;
+                break;
+            default:
+                System.out.println("Invalid operator!");
+                return;
+        }
+
+        System.out.println("Result: " + result);
     }
-    
 }
-    }}Switch
